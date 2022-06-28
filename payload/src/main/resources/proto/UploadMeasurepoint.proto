@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+option java_package = "com.envisioniot.payload.proto";
+option java_outer_classname = "ProtoUploadMeasurepointProto";
+
+message UploadMeasurepoint {
+  string id = 1;
+  string version = 2;
+  string method = 3;
+  Params params = 4;
+}
+
+message Params {
+  int64 timestamp = 1;
+  map<string, google.protobuf.Any> measurepoints = 2;
+}

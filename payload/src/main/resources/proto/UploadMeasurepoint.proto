@@ -14,5 +14,10 @@ message UploadMeasurepoint {
 
 message Params {
   int64 timestamp = 1;
-  map<string, google.protobuf.Any> measurepoints = 2;
+  repeated Measurepoint measurepoint = 2;
+}
+
+message Measurepoint {
+  string key = 1;
+  google.protobuf.Any value = 2;
 }

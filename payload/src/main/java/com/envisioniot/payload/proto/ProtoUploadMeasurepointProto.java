@@ -63,11 +63,11 @@ public final class ProtoUploadMeasurepointProto {
      * <code>.Params params = 4;</code>
      * @return The params.
      */
-    ProtoUploadMeasurepointProto.Params getParams();
+    com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params getParams();
     /**
      * <code>.Params params = 4;</code>
      */
-    ProtoUploadMeasurepointProto.ParamsOrBuilder getParamsOrBuilder();
+    com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.ParamsOrBuilder getParamsOrBuilder();
   }
   /**
    * Protobuf type {@code UploadMeasurepoint}
@@ -136,11 +136,11 @@ public final class ProtoUploadMeasurepointProto {
               break;
             }
             case 34: {
-              ProtoUploadMeasurepointProto.Params.Builder subBuilder = null;
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder subBuilder = null;
               if (params_ != null) {
                 subBuilder = params_.toBuilder();
               }
-              params_ = input.readMessage(ProtoUploadMeasurepointProto.Params.parser(), extensionRegistry);
+              params_ = input.readMessage(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(params_);
                 params_ = subBuilder.buildPartial();
@@ -169,15 +169,15 @@ public final class ProtoUploadMeasurepointProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_descriptor;
+      return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_fieldAccessorTable
+      return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ProtoUploadMeasurepointProto.UploadMeasurepoint.class, ProtoUploadMeasurepointProto.UploadMeasurepoint.Builder.class);
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint.class, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -295,7 +295,7 @@ public final class ProtoUploadMeasurepointProto {
     }
 
     public static final int PARAMS_FIELD_NUMBER = 4;
-    private ProtoUploadMeasurepointProto.Params params_;
+    private com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params params_;
     /**
      * <code>.Params params = 4;</code>
      * @return Whether the params field is set.
@@ -309,14 +309,14 @@ public final class ProtoUploadMeasurepointProto {
      * @return The params.
      */
     @java.lang.Override
-    public ProtoUploadMeasurepointProto.Params getParams() {
-      return params_ == null ? ProtoUploadMeasurepointProto.Params.getDefaultInstance() : params_;
+    public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params getParams() {
+      return params_ == null ? com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.getDefaultInstance() : params_;
     }
     /**
      * <code>.Params params = 4;</code>
      */
     @java.lang.Override
-    public ProtoUploadMeasurepointProto.ParamsOrBuilder getParamsOrBuilder() {
+    public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.ParamsOrBuilder getParamsOrBuilder() {
       return getParams();
     }
 
@@ -378,10 +378,10 @@ public final class ProtoUploadMeasurepointProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof ProtoUploadMeasurepointProto.UploadMeasurepoint)) {
+      if (!(obj instanceof com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint)) {
         return super.equals(obj);
       }
-      ProtoUploadMeasurepointProto.UploadMeasurepoint other = (ProtoUploadMeasurepointProto.UploadMeasurepoint) obj;
+      com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint other = (com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint) obj;
 
       if (!getId()
           .equals(other.getId())) return false;
@@ -420,69 +420,69 @@ public final class ProtoUploadMeasurepointProto {
       return hash;
     }
 
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(byte[] data)
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(java.io.InputStream input)
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseDelimitedFrom(java.io.InputStream input)
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseDelimitedFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -495,7 +495,7 @@ public final class ProtoUploadMeasurepointProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(ProtoUploadMeasurepointProto.UploadMeasurepoint prototype) {
+    public static Builder newBuilder(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -516,21 +516,21 @@ public final class ProtoUploadMeasurepointProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:UploadMeasurepoint)
-        ProtoUploadMeasurepointProto.UploadMeasurepointOrBuilder {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepointOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_descriptor;
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_fieldAccessorTable
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                ProtoUploadMeasurepointProto.UploadMeasurepoint.class, ProtoUploadMeasurepointProto.UploadMeasurepoint.Builder.class);
+                com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint.class, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint.Builder.class);
       }
 
-      // Construct using com.envisioniot.payload.proto.UploadMeasurepointProto.UploadMeasurepoint.newBuilder()
+      // Construct using com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -566,17 +566,17 @@ public final class ProtoUploadMeasurepointProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_descriptor;
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_UploadMeasurepoint_descriptor;
       }
 
       @java.lang.Override
-      public ProtoUploadMeasurepointProto.UploadMeasurepoint getDefaultInstanceForType() {
-        return ProtoUploadMeasurepointProto.UploadMeasurepoint.getDefaultInstance();
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint getDefaultInstanceForType() {
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint.getDefaultInstance();
       }
 
       @java.lang.Override
-      public ProtoUploadMeasurepointProto.UploadMeasurepoint build() {
-        ProtoUploadMeasurepointProto.UploadMeasurepoint result = buildPartial();
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint build() {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -584,8 +584,8 @@ public final class ProtoUploadMeasurepointProto {
       }
 
       @java.lang.Override
-      public ProtoUploadMeasurepointProto.UploadMeasurepoint buildPartial() {
-        ProtoUploadMeasurepointProto.UploadMeasurepoint result = new ProtoUploadMeasurepointProto.UploadMeasurepoint(this);
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint buildPartial() {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint result = new com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint(this);
         result.id_ = id_;
         result.version_ = version_;
         result.method_ = method_;
@@ -632,16 +632,16 @@ public final class ProtoUploadMeasurepointProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ProtoUploadMeasurepointProto.UploadMeasurepoint) {
-          return mergeFrom((ProtoUploadMeasurepointProto.UploadMeasurepoint)other);
+        if (other instanceof com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint) {
+          return mergeFrom((com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(ProtoUploadMeasurepointProto.UploadMeasurepoint other) {
-        if (other == ProtoUploadMeasurepointProto.UploadMeasurepoint.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint other) {
+        if (other == com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint.getDefaultInstance()) return this;
         if (!other.getId().isEmpty()) {
           id_ = other.id_;
           onChanged();
@@ -672,11 +672,11 @@ public final class ProtoUploadMeasurepointProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        ProtoUploadMeasurepointProto.UploadMeasurepoint parsedMessage = null;
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ProtoUploadMeasurepointProto.UploadMeasurepoint) e.getUnfinishedMessage();
+          parsedMessage = (com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -914,9 +914,9 @@ public final class ProtoUploadMeasurepointProto {
         return this;
       }
 
-      private ProtoUploadMeasurepointProto.Params params_;
+      private com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params params_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          ProtoUploadMeasurepointProto.Params, ProtoUploadMeasurepointProto.Params.Builder, ProtoUploadMeasurepointProto.ParamsOrBuilder> paramsBuilder_;
+          com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.ParamsOrBuilder> paramsBuilder_;
       /**
        * <code>.Params params = 4;</code>
        * @return Whether the params field is set.
@@ -928,9 +928,9 @@ public final class ProtoUploadMeasurepointProto {
        * <code>.Params params = 4;</code>
        * @return The params.
        */
-      public ProtoUploadMeasurepointProto.Params getParams() {
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params getParams() {
         if (paramsBuilder_ == null) {
-          return params_ == null ? ProtoUploadMeasurepointProto.Params.getDefaultInstance() : params_;
+          return params_ == null ? com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.getDefaultInstance() : params_;
         } else {
           return paramsBuilder_.getMessage();
         }
@@ -938,7 +938,7 @@ public final class ProtoUploadMeasurepointProto {
       /**
        * <code>.Params params = 4;</code>
        */
-      public Builder setParams(ProtoUploadMeasurepointProto.Params value) {
+      public Builder setParams(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params value) {
         if (paramsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -955,7 +955,7 @@ public final class ProtoUploadMeasurepointProto {
        * <code>.Params params = 4;</code>
        */
       public Builder setParams(
-          ProtoUploadMeasurepointProto.Params.Builder builderForValue) {
+          com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder builderForValue) {
         if (paramsBuilder_ == null) {
           params_ = builderForValue.build();
           onChanged();
@@ -968,11 +968,11 @@ public final class ProtoUploadMeasurepointProto {
       /**
        * <code>.Params params = 4;</code>
        */
-      public Builder mergeParams(ProtoUploadMeasurepointProto.Params value) {
+      public Builder mergeParams(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params value) {
         if (paramsBuilder_ == null) {
           if (params_ != null) {
             params_ =
-              ProtoUploadMeasurepointProto.Params.newBuilder(params_).mergeFrom(value).buildPartial();
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.newBuilder(params_).mergeFrom(value).buildPartial();
           } else {
             params_ = value;
           }
@@ -1000,7 +1000,7 @@ public final class ProtoUploadMeasurepointProto {
       /**
        * <code>.Params params = 4;</code>
        */
-      public ProtoUploadMeasurepointProto.Params.Builder getParamsBuilder() {
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder getParamsBuilder() {
         
         onChanged();
         return getParamsFieldBuilder().getBuilder();
@@ -1008,23 +1008,23 @@ public final class ProtoUploadMeasurepointProto {
       /**
        * <code>.Params params = 4;</code>
        */
-      public ProtoUploadMeasurepointProto.ParamsOrBuilder getParamsOrBuilder() {
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.ParamsOrBuilder getParamsOrBuilder() {
         if (paramsBuilder_ != null) {
           return paramsBuilder_.getMessageOrBuilder();
         } else {
           return params_ == null ?
-              ProtoUploadMeasurepointProto.Params.getDefaultInstance() : params_;
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.getDefaultInstance() : params_;
         }
       }
       /**
        * <code>.Params params = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          ProtoUploadMeasurepointProto.Params, ProtoUploadMeasurepointProto.Params.Builder, ProtoUploadMeasurepointProto.ParamsOrBuilder>
+          com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.ParamsOrBuilder> 
           getParamsFieldBuilder() {
         if (paramsBuilder_ == null) {
           paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              ProtoUploadMeasurepointProto.Params, ProtoUploadMeasurepointProto.Params.Builder, ProtoUploadMeasurepointProto.ParamsOrBuilder>(
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.ParamsOrBuilder>(
                   getParams(),
                   getParentForChildren(),
                   isClean());
@@ -1049,12 +1049,12 @@ public final class ProtoUploadMeasurepointProto {
     }
 
     // @@protoc_insertion_point(class_scope:UploadMeasurepoint)
-    private static final ProtoUploadMeasurepointProto.UploadMeasurepoint DEFAULT_INSTANCE;
+    private static final com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new ProtoUploadMeasurepointProto.UploadMeasurepoint();
+      DEFAULT_INSTANCE = new com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint();
     }
 
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint getDefaultInstance() {
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1079,7 +1079,7 @@ public final class ProtoUploadMeasurepointProto {
     }
 
     @java.lang.Override
-    public ProtoUploadMeasurepointProto.UploadMeasurepoint getDefaultInstanceForType() {
+    public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.UploadMeasurepoint getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1096,38 +1096,28 @@ public final class ProtoUploadMeasurepointProto {
     long getTimestamp();
 
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
-    int getMeasurepointsCount();
+    java.util.List<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint> 
+        getMeasurepointList();
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
-    boolean containsMeasurepoints(
-        java.lang.String key);
+    com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint getMeasurepoint(int index);
     /**
-     * Use {@link #getMeasurepointsMap()} instead.
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.String, com.google.protobuf.Any>
-    getMeasurepoints();
+    int getMeasurepointCount();
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
-    java.util.Map<java.lang.String, com.google.protobuf.Any>
-    getMeasurepointsMap();
+    java.util.List<? extends com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder> 
+        getMeasurepointOrBuilderList();
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
-
-    com.google.protobuf.Any getMeasurepointsOrDefault(
-        java.lang.String key,
-        com.google.protobuf.Any defaultValue);
-    /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
-     */
-
-    com.google.protobuf.Any getMeasurepointsOrThrow(
-        java.lang.String key);
+    com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder getMeasurepointOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code Params}
@@ -1142,6 +1132,7 @@ public final class ProtoUploadMeasurepointProto {
       super(builder);
     }
     private Params() {
+      measurepoint_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -1182,15 +1173,11 @@ public final class ProtoUploadMeasurepointProto {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                measurepoints_ = com.google.protobuf.MapField.newMapField(
-                    MeasurepointsDefaultEntryHolder.defaultEntry);
+                measurepoint_ = new java.util.ArrayList<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              com.google.protobuf.MapEntry<java.lang.String, com.google.protobuf.Any>
-              measurepoints__ = input.readMessage(
-                  MeasurepointsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              measurepoints_.getMutableMap().put(
-                  measurepoints__.getKey(), measurepoints__.getValue());
+              measurepoint_.add(
+                  input.readMessage(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -1208,33 +1195,24 @@ public final class ProtoUploadMeasurepointProto {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          measurepoint_ = java.util.Collections.unmodifiableList(measurepoint_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProtoUploadMeasurepointProto.internal_static_Params_descriptor;
+      return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Params_descriptor;
     }
 
-    @SuppressWarnings({"rawtypes"})
-    @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(
-        int number) {
-      switch (number) {
-        case 2:
-          return internalGetMeasurepoints();
-        default:
-          throw new RuntimeException(
-              "Invalid map field number: " + number);
-      }
-    }
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProtoUploadMeasurepointProto.internal_static_Params_fieldAccessorTable
+      return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Params_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ProtoUploadMeasurepointProto.Params.class, ProtoUploadMeasurepointProto.Params.Builder.class);
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.class, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder.class);
     }
 
     public static final int TIMESTAMP_FIELD_NUMBER = 1;
@@ -1248,85 +1226,44 @@ public final class ProtoUploadMeasurepointProto {
       return timestamp_;
     }
 
-    public static final int MEASUREPOINTS_FIELD_NUMBER = 2;
-    private static final class MeasurepointsDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.String, com.google.protobuf.Any> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.String, com.google.protobuf.Any>newDefaultInstance(
-                  ProtoUploadMeasurepointProto.internal_static_Params_MeasurepointsEntry_descriptor,
-                  com.google.protobuf.WireFormat.FieldType.STRING,
-                  "",
-                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  com.google.protobuf.Any.getDefaultInstance());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.String, com.google.protobuf.Any> measurepoints_;
-    private com.google.protobuf.MapField<java.lang.String, com.google.protobuf.Any>
-    internalGetMeasurepoints() {
-      if (measurepoints_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            MeasurepointsDefaultEntryHolder.defaultEntry);
-      }
-      return measurepoints_;
-    }
-
-    public int getMeasurepointsCount() {
-      return internalGetMeasurepoints().getMap().size();
-    }
+    public static final int MEASUREPOINT_FIELD_NUMBER = 2;
+    private java.util.List<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint> measurepoint_;
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsMeasurepoints(
-        java.lang.String key) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      return internalGetMeasurepoints().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getMeasurepointsMap()} instead.
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
     @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.String, com.google.protobuf.Any> getMeasurepoints() {
-      return getMeasurepointsMap();
+    public java.util.List<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint> getMeasurepointList() {
+      return measurepoint_;
     }
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
     @java.lang.Override
-
-    public java.util.Map<java.lang.String, com.google.protobuf.Any> getMeasurepointsMap() {
-      return internalGetMeasurepoints().getMap();
+    public java.util.List<? extends com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder> 
+        getMeasurepointOrBuilderList() {
+      return measurepoint_;
     }
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
     @java.lang.Override
-
-    public com.google.protobuf.Any getMeasurepointsOrDefault(
-        java.lang.String key,
-        com.google.protobuf.Any defaultValue) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      java.util.Map<java.lang.String, com.google.protobuf.Any> map =
-          internalGetMeasurepoints().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
+    public int getMeasurepointCount() {
+      return measurepoint_.size();
     }
     /**
-     * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
      */
     @java.lang.Override
-
-    public com.google.protobuf.Any getMeasurepointsOrThrow(
-        java.lang.String key) {
-      if (key == null) { throw new NullPointerException("map key"); }
-      java.util.Map<java.lang.String, com.google.protobuf.Any> map =
-          internalGetMeasurepoints().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
+    public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint getMeasurepoint(int index) {
+      return measurepoint_.get(index);
+    }
+    /**
+     * <code>repeated .Measurepoint measurepoint = 2;</code>
+     */
+    @java.lang.Override
+    public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder getMeasurepointOrBuilder(
+        int index) {
+      return measurepoint_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1346,12 +1283,9 @@ public final class ProtoUploadMeasurepointProto {
       if (timestamp_ != 0L) {
         output.writeInt64(1, timestamp_);
       }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeStringMapTo(
-          output,
-          internalGetMeasurepoints(),
-          MeasurepointsDefaultEntryHolder.defaultEntry,
-          2);
+      for (int i = 0; i < measurepoint_.size(); i++) {
+        output.writeMessage(2, measurepoint_.get(i));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -1365,15 +1299,9 @@ public final class ProtoUploadMeasurepointProto {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, timestamp_);
       }
-      for (java.util.Map.Entry<java.lang.String, com.google.protobuf.Any> entry
-           : internalGetMeasurepoints().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, com.google.protobuf.Any>
-        measurepoints__ = MeasurepointsDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
+      for (int i = 0; i < measurepoint_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, measurepoints__);
+          .computeMessageSize(2, measurepoint_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1385,15 +1313,15 @@ public final class ProtoUploadMeasurepointProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof ProtoUploadMeasurepointProto.Params)) {
+      if (!(obj instanceof com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params)) {
         return super.equals(obj);
       }
-      ProtoUploadMeasurepointProto.Params other = (ProtoUploadMeasurepointProto.Params) obj;
+      com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params other = (com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params) obj;
 
       if (getTimestamp()
           != other.getTimestamp()) return false;
-      if (!internalGetMeasurepoints().equals(
-          other.internalGetMeasurepoints())) return false;
+      if (!getMeasurepointList()
+          .equals(other.getMeasurepointList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1408,78 +1336,78 @@ public final class ProtoUploadMeasurepointProto {
       hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getTimestamp());
-      if (!internalGetMeasurepoints().getMap().isEmpty()) {
-        hash = (37 * hash) + MEASUREPOINTS_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetMeasurepoints().hashCode();
+      if (getMeasurepointCount() > 0) {
+        hash = (37 * hash) + MEASUREPOINT_FIELD_NUMBER;
+        hash = (53 * hash) + getMeasurepointList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(byte[] data)
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(java.io.InputStream input)
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.Params parseDelimitedFrom(java.io.InputStream input)
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static ProtoUploadMeasurepointProto.Params parseDelimitedFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProtoUploadMeasurepointProto.Params parseFrom(
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1492,7 +1420,7 @@ public final class ProtoUploadMeasurepointProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(ProtoUploadMeasurepointProto.Params prototype) {
+    public static Builder newBuilder(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1513,43 +1441,21 @@ public final class ProtoUploadMeasurepointProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Params)
-        ProtoUploadMeasurepointProto.ParamsOrBuilder {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.ParamsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ProtoUploadMeasurepointProto.internal_static_Params_descriptor;
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Params_descriptor;
       }
 
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(
-          int number) {
-        switch (number) {
-          case 2:
-            return internalGetMeasurepoints();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(
-          int number) {
-        switch (number) {
-          case 2:
-            return internalGetMutableMeasurepoints();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ProtoUploadMeasurepointProto.internal_static_Params_fieldAccessorTable
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Params_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                ProtoUploadMeasurepointProto.Params.class, ProtoUploadMeasurepointProto.Params.Builder.class);
+                com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.class, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.Builder.class);
       }
 
-      // Construct using com.envisioniot.payload.proto.UploadMeasurepointProto.Params.newBuilder()
+      // Construct using com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1562,6 +1468,7 @@ public final class ProtoUploadMeasurepointProto {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getMeasurepointFieldBuilder();
         }
       }
       @java.lang.Override
@@ -1569,24 +1476,29 @@ public final class ProtoUploadMeasurepointProto {
         super.clear();
         timestamp_ = 0L;
 
-        internalGetMutableMeasurepoints().clear();
+        if (measurepointBuilder_ == null) {
+          measurepoint_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          measurepointBuilder_.clear();
+        }
         return this;
       }
 
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ProtoUploadMeasurepointProto.internal_static_Params_descriptor;
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Params_descriptor;
       }
 
       @java.lang.Override
-      public ProtoUploadMeasurepointProto.Params getDefaultInstanceForType() {
-        return ProtoUploadMeasurepointProto.Params.getDefaultInstance();
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params getDefaultInstanceForType() {
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.getDefaultInstance();
       }
 
       @java.lang.Override
-      public ProtoUploadMeasurepointProto.Params build() {
-        ProtoUploadMeasurepointProto.Params result = buildPartial();
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params build() {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1594,12 +1506,19 @@ public final class ProtoUploadMeasurepointProto {
       }
 
       @java.lang.Override
-      public ProtoUploadMeasurepointProto.Params buildPartial() {
-        ProtoUploadMeasurepointProto.Params result = new ProtoUploadMeasurepointProto.Params(this);
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params buildPartial() {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params result = new com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params(this);
         int from_bitField0_ = bitField0_;
         result.timestamp_ = timestamp_;
-        result.measurepoints_ = internalGetMeasurepoints();
-        result.measurepoints_.makeImmutable();
+        if (measurepointBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            measurepoint_ = java.util.Collections.unmodifiableList(measurepoint_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.measurepoint_ = measurepoint_;
+        } else {
+          result.measurepoint_ = measurepointBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -1638,21 +1557,45 @@ public final class ProtoUploadMeasurepointProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ProtoUploadMeasurepointProto.Params) {
-          return mergeFrom((ProtoUploadMeasurepointProto.Params)other);
+        if (other instanceof com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params) {
+          return mergeFrom((com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(ProtoUploadMeasurepointProto.Params other) {
-        if (other == ProtoUploadMeasurepointProto.Params.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params other) {
+        if (other == com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params.getDefaultInstance()) return this;
         if (other.getTimestamp() != 0L) {
           setTimestamp(other.getTimestamp());
         }
-        internalGetMutableMeasurepoints().mergeFrom(
-            other.internalGetMeasurepoints());
+        if (measurepointBuilder_ == null) {
+          if (!other.measurepoint_.isEmpty()) {
+            if (measurepoint_.isEmpty()) {
+              measurepoint_ = other.measurepoint_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureMeasurepointIsMutable();
+              measurepoint_.addAll(other.measurepoint_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.measurepoint_.isEmpty()) {
+            if (measurepointBuilder_.isEmpty()) {
+              measurepointBuilder_.dispose();
+              measurepointBuilder_ = null;
+              measurepoint_ = other.measurepoint_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              measurepointBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getMeasurepointFieldBuilder() : null;
+            } else {
+              measurepointBuilder_.addAllMessages(other.measurepoint_);
+            }
+          }
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -1668,11 +1611,11 @@ public final class ProtoUploadMeasurepointProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        ProtoUploadMeasurepointProto.Params parsedMessage = null;
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ProtoUploadMeasurepointProto.Params) e.getUnfinishedMessage();
+          parsedMessage = (com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1714,135 +1657,244 @@ public final class ProtoUploadMeasurepointProto {
         return this;
       }
 
-      private com.google.protobuf.MapField<
-          java.lang.String, com.google.protobuf.Any> measurepoints_;
-      private com.google.protobuf.MapField<java.lang.String, com.google.protobuf.Any>
-      internalGetMeasurepoints() {
-        if (measurepoints_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              MeasurepointsDefaultEntryHolder.defaultEntry);
+      private java.util.List<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint> measurepoint_ =
+        java.util.Collections.emptyList();
+      private void ensureMeasurepointIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          measurepoint_ = new java.util.ArrayList<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint>(measurepoint_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder> measurepointBuilder_;
+
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public java.util.List<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint> getMeasurepointList() {
+        if (measurepointBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(measurepoint_);
+        } else {
+          return measurepointBuilder_.getMessageList();
         }
-        return measurepoints_;
       }
-      private com.google.protobuf.MapField<java.lang.String, com.google.protobuf.Any>
-      internalGetMutableMeasurepoints() {
-        onChanged();;
-        if (measurepoints_ == null) {
-          measurepoints_ = com.google.protobuf.MapField.newMapField(
-              MeasurepointsDefaultEntryHolder.defaultEntry);
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public int getMeasurepointCount() {
+        if (measurepointBuilder_ == null) {
+          return measurepoint_.size();
+        } else {
+          return measurepointBuilder_.getCount();
         }
-        if (!measurepoints_.isMutable()) {
-          measurepoints_ = measurepoints_.copy();
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint getMeasurepoint(int index) {
+        if (measurepointBuilder_ == null) {
+          return measurepoint_.get(index);
+        } else {
+          return measurepointBuilder_.getMessage(index);
         }
-        return measurepoints_;
-      }
-
-      public int getMeasurepointsCount() {
-        return internalGetMeasurepoints().getMap().size();
       }
       /**
-       * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
        */
-
-      @java.lang.Override
-      public boolean containsMeasurepoints(
-          java.lang.String key) {
-        if (key == null) { throw new NullPointerException("map key"); }
-        return internalGetMeasurepoints().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getMeasurepointsMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, com.google.protobuf.Any> getMeasurepoints() {
-        return getMeasurepointsMap();
-      }
-      /**
-       * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.String, com.google.protobuf.Any> getMeasurepointsMap() {
-        return internalGetMeasurepoints().getMap();
-      }
-      /**
-       * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
-       */
-      @java.lang.Override
-
-      public com.google.protobuf.Any getMeasurepointsOrDefault(
-          java.lang.String key,
-          com.google.protobuf.Any defaultValue) {
-        if (key == null) { throw new NullPointerException("map key"); }
-        java.util.Map<java.lang.String, com.google.protobuf.Any> map =
-            internalGetMeasurepoints().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
-       */
-      @java.lang.Override
-
-      public com.google.protobuf.Any getMeasurepointsOrThrow(
-          java.lang.String key) {
-        if (key == null) { throw new NullPointerException("map key"); }
-        java.util.Map<java.lang.String, com.google.protobuf.Any> map =
-            internalGetMeasurepoints().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
+      public Builder setMeasurepoint(
+          int index, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint value) {
+        if (measurepointBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMeasurepointIsMutable();
+          measurepoint_.set(index, value);
+          onChanged();
+        } else {
+          measurepointBuilder_.setMessage(index, value);
         }
-        return map.get(key);
-      }
-
-      public Builder clearMeasurepoints() {
-        internalGetMutableMeasurepoints().getMutableMap()
-            .clear();
         return this;
       }
       /**
-       * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
        */
-
-      public Builder removeMeasurepoints(
-          java.lang.String key) {
-        if (key == null) { throw new NullPointerException("map key"); }
-        internalGetMutableMeasurepoints().getMutableMap()
-            .remove(key);
+      public Builder setMeasurepoint(
+          int index, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder builderForValue) {
+        if (measurepointBuilder_ == null) {
+          ensureMeasurepointIsMutable();
+          measurepoint_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          measurepointBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
       }
       /**
-       * Use alternate mutation accessors instead.
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
        */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, com.google.protobuf.Any>
-      getMutableMeasurepoints() {
-        return internalGetMutableMeasurepoints().getMutableMap();
-      }
-      /**
-       * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
-       */
-      public Builder putMeasurepoints(
-          java.lang.String key,
-          com.google.protobuf.Any value) {
-        if (key == null) { throw new NullPointerException("map key"); }
-        if (value == null) {
-  throw new NullPointerException("map value");
-}
-
-        internalGetMutableMeasurepoints().getMutableMap()
-            .put(key, value);
+      public Builder addMeasurepoint(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint value) {
+        if (measurepointBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMeasurepointIsMutable();
+          measurepoint_.add(value);
+          onChanged();
+        } else {
+          measurepointBuilder_.addMessage(value);
+        }
         return this;
       }
       /**
-       * <code>map&lt;string, .google.protobuf.Any&gt; measurepoints = 2;</code>
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
        */
-
-      public Builder putAllMeasurepoints(
-          java.util.Map<java.lang.String, com.google.protobuf.Any> values) {
-        internalGetMutableMeasurepoints().getMutableMap()
-            .putAll(values);
+      public Builder addMeasurepoint(
+          int index, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint value) {
+        if (measurepointBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureMeasurepointIsMutable();
+          measurepoint_.add(index, value);
+          onChanged();
+        } else {
+          measurepointBuilder_.addMessage(index, value);
+        }
         return this;
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public Builder addMeasurepoint(
+          com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder builderForValue) {
+        if (measurepointBuilder_ == null) {
+          ensureMeasurepointIsMutable();
+          measurepoint_.add(builderForValue.build());
+          onChanged();
+        } else {
+          measurepointBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public Builder addMeasurepoint(
+          int index, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder builderForValue) {
+        if (measurepointBuilder_ == null) {
+          ensureMeasurepointIsMutable();
+          measurepoint_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          measurepointBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public Builder addAllMeasurepoint(
+          java.lang.Iterable<? extends com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint> values) {
+        if (measurepointBuilder_ == null) {
+          ensureMeasurepointIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, measurepoint_);
+          onChanged();
+        } else {
+          measurepointBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public Builder clearMeasurepoint() {
+        if (measurepointBuilder_ == null) {
+          measurepoint_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          measurepointBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public Builder removeMeasurepoint(int index) {
+        if (measurepointBuilder_ == null) {
+          ensureMeasurepointIsMutable();
+          measurepoint_.remove(index);
+          onChanged();
+        } else {
+          measurepointBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder getMeasurepointBuilder(
+          int index) {
+        return getMeasurepointFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder getMeasurepointOrBuilder(
+          int index) {
+        if (measurepointBuilder_ == null) {
+          return measurepoint_.get(index);  } else {
+          return measurepointBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public java.util.List<? extends com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder> 
+           getMeasurepointOrBuilderList() {
+        if (measurepointBuilder_ != null) {
+          return measurepointBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(measurepoint_);
+        }
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder addMeasurepointBuilder() {
+        return getMeasurepointFieldBuilder().addBuilder(
+            com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder addMeasurepointBuilder(
+          int index) {
+        return getMeasurepointFieldBuilder().addBuilder(
+            index, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .Measurepoint measurepoint = 2;</code>
+       */
+      public java.util.List<com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder> 
+           getMeasurepointBuilderList() {
+        return getMeasurepointFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder> 
+          getMeasurepointFieldBuilder() {
+        if (measurepointBuilder_ == null) {
+          measurepointBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder>(
+                  measurepoint_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          measurepoint_ = null;
+        }
+        return measurepointBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1861,12 +1913,12 @@ public final class ProtoUploadMeasurepointProto {
     }
 
     // @@protoc_insertion_point(class_scope:Params)
-    private static final ProtoUploadMeasurepointProto.Params DEFAULT_INSTANCE;
+    private static final com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new ProtoUploadMeasurepointProto.Params();
+      DEFAULT_INSTANCE = new com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params();
     }
 
-    public static ProtoUploadMeasurepointProto.Params getDefaultInstance() {
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1891,7 +1943,778 @@ public final class ProtoUploadMeasurepointProto {
     }
 
     @java.lang.Override
-    public ProtoUploadMeasurepointProto.Params getDefaultInstanceForType() {
+    public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Params getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface MeasurepointOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Measurepoint)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string key = 1;</code>
+     * @return The key.
+     */
+    java.lang.String getKey();
+    /**
+     * <code>string key = 1;</code>
+     * @return The bytes for key.
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
+
+    /**
+     * <code>.google.protobuf.Any value = 2;</code>
+     * @return Whether the value field is set.
+     */
+    boolean hasValue();
+    /**
+     * <code>.google.protobuf.Any value = 2;</code>
+     * @return The value.
+     */
+    com.google.protobuf.Any getValue();
+    /**
+     * <code>.google.protobuf.Any value = 2;</code>
+     */
+    com.google.protobuf.AnyOrBuilder getValueOrBuilder();
+  }
+  /**
+   * Protobuf type {@code Measurepoint}
+   */
+  public static final class Measurepoint extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:Measurepoint)
+      MeasurepointOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Measurepoint.newBuilder() to construct.
+    private Measurepoint(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Measurepoint() {
+      key_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new Measurepoint();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Measurepoint(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              key_ = s;
+              break;
+            }
+            case 18: {
+              com.google.protobuf.Any.Builder subBuilder = null;
+              if (value_ != null) {
+                subBuilder = value_.toBuilder();
+              }
+              value_ = input.readMessage(com.google.protobuf.Any.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(value_);
+                value_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Measurepoint_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Measurepoint_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.class, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder.class);
+    }
+
+    public static final int KEY_FIELD_NUMBER = 1;
+    private volatile java.lang.Object key_;
+    /**
+     * <code>string key = 1;</code>
+     * @return The key.
+     */
+    @java.lang.Override
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        key_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string key = 1;</code>
+     * @return The bytes for key.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int VALUE_FIELD_NUMBER = 2;
+    private com.google.protobuf.Any value_;
+    /**
+     * <code>.google.protobuf.Any value = 2;</code>
+     * @return Whether the value field is set.
+     */
+    @java.lang.Override
+    public boolean hasValue() {
+      return value_ != null;
+    }
+    /**
+     * <code>.google.protobuf.Any value = 2;</code>
+     * @return The value.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Any getValue() {
+      return value_ == null ? com.google.protobuf.Any.getDefaultInstance() : value_;
+    }
+    /**
+     * <code>.google.protobuf.Any value = 2;</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.AnyOrBuilder getValueOrBuilder() {
+      return getValue();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
+      }
+      if (value_ != null) {
+        output.writeMessage(2, getValue());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
+      }
+      if (value_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getValue());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint)) {
+        return super.equals(obj);
+      }
+      com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint other = (com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint) obj;
+
+      if (!getKey()
+          .equals(other.getKey())) return false;
+      if (hasValue() != other.hasValue()) return false;
+      if (hasValue()) {
+        if (!getValue()
+            .equals(other.getValue())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + KEY_FIELD_NUMBER;
+      hash = (53 * hash) + getKey().hashCode();
+      if (hasValue()) {
+        hash = (37 * hash) + VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + getValue().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code Measurepoint}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:Measurepoint)
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.MeasurepointOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Measurepoint_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Measurepoint_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.class, com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.Builder.class);
+      }
+
+      // Construct using com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        key_ = "";
+
+        if (valueBuilder_ == null) {
+          value_ = null;
+        } else {
+          value_ = null;
+          valueBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.internal_static_Measurepoint_descriptor;
+      }
+
+      @java.lang.Override
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint getDefaultInstanceForType() {
+        return com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint build() {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint buildPartial() {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint result = new com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint(this);
+        result.key_ = key_;
+        if (valueBuilder_ == null) {
+          result.value_ = value_;
+        } else {
+          result.value_ = valueBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint) {
+          return mergeFrom((com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint other) {
+        if (other == com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint.getDefaultInstance()) return this;
+        if (!other.getKey().isEmpty()) {
+          key_ = other.key_;
+          onChanged();
+        }
+        if (other.hasValue()) {
+          mergeValue(other.getValue());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object key_ = "";
+      /**
+       * <code>string key = 1;</code>
+       * @return The key.
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string key = 1;</code>
+       * @return The bytes for key.
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string key = 1;</code>
+       * @param value The key to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string key = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKey() {
+        
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string key = 1;</code>
+       * @param value The bytes for key to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Any value_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> valueBuilder_;
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       * @return Whether the value field is set.
+       */
+      public boolean hasValue() {
+        return valueBuilder_ != null || value_ != null;
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       * @return The value.
+       */
+      public com.google.protobuf.Any getValue() {
+        if (valueBuilder_ == null) {
+          return value_ == null ? com.google.protobuf.Any.getDefaultInstance() : value_;
+        } else {
+          return valueBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       */
+      public Builder setValue(com.google.protobuf.Any value) {
+        if (valueBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          value_ = value;
+          onChanged();
+        } else {
+          valueBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       */
+      public Builder setValue(
+          com.google.protobuf.Any.Builder builderForValue) {
+        if (valueBuilder_ == null) {
+          value_ = builderForValue.build();
+          onChanged();
+        } else {
+          valueBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       */
+      public Builder mergeValue(com.google.protobuf.Any value) {
+        if (valueBuilder_ == null) {
+          if (value_ != null) {
+            value_ =
+              com.google.protobuf.Any.newBuilder(value_).mergeFrom(value).buildPartial();
+          } else {
+            value_ = value;
+          }
+          onChanged();
+        } else {
+          valueBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       */
+      public Builder clearValue() {
+        if (valueBuilder_ == null) {
+          value_ = null;
+          onChanged();
+        } else {
+          value_ = null;
+          valueBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       */
+      public com.google.protobuf.Any.Builder getValueBuilder() {
+        
+        onChanged();
+        return getValueFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       */
+      public com.google.protobuf.AnyOrBuilder getValueOrBuilder() {
+        if (valueBuilder_ != null) {
+          return valueBuilder_.getMessageOrBuilder();
+        } else {
+          return value_ == null ?
+              com.google.protobuf.Any.getDefaultInstance() : value_;
+        }
+      }
+      /**
+       * <code>.google.protobuf.Any value = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> 
+          getValueFieldBuilder() {
+        if (valueBuilder_ == null) {
+          valueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder>(
+                  getValue(),
+                  getParentForChildren(),
+                  isClean());
+          value_ = null;
+        }
+        return valueBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:Measurepoint)
+    }
+
+    // @@protoc_insertion_point(class_scope:Measurepoint)
+    private static final com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint();
+    }
+
+    public static com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Measurepoint>
+        PARSER = new com.google.protobuf.AbstractParser<Measurepoint>() {
+      @java.lang.Override
+      public Measurepoint parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Measurepoint(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Measurepoint> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Measurepoint> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.envisioniot.payload.proto.ProtoUploadMeasurepointProto.Measurepoint getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1908,10 +2731,10 @@ public final class ProtoUploadMeasurepointProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Params_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Params_MeasurepointsEntry_descriptor;
+    internal_static_Measurepoint_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Params_MeasurepointsEntry_fieldAccessorTable;
+      internal_static_Measurepoint_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1924,13 +2747,12 @@ public final class ProtoUploadMeasurepointProto {
       "\n\030UploadMeasurepoint.proto\032\031google/proto" +
       "buf/any.proto\"Z\n\022UploadMeasurepoint\022\n\n\002i" +
       "d\030\001 \001(\t\022\017\n\007version\030\002 \001(\t\022\016\n\006method\030\003 \001(\t" +
-      "\022\027\n\006params\030\004 \001(\0132\007.Params\"\232\001\n\006Params\022\021\n\t" +
-      "timestamp\030\001 \001(\003\0221\n\rmeasurepoints\030\002 \003(\0132\032" +
-      ".Params.MeasurepointsEntry\032J\n\022Measurepoi" +
-      "ntsEntry\022\013\n\003key\030\001 \001(\t\022#\n\005value\030\002 \001(\0132\024.g" +
-      "oogle.protobuf.Any:\0028\001B8\n\035com.envisionio" +
-      "t.payload.protoB\027UploadMeasurepointProto" +
-      "b\006proto3"
+      "\022\027\n\006params\030\004 \001(\0132\007.Params\"@\n\006Params\022\021\n\tt" +
+      "imestamp\030\001 \001(\003\022#\n\014measurepoint\030\002 \003(\0132\r.M" +
+      "easurepoint\"@\n\014Measurepoint\022\013\n\003key\030\001 \001(\t" +
+      "\022#\n\005value\030\002 \001(\0132\024.google.protobuf.AnyB=\n" +
+      "\035com.envisioniot.payload.protoB\034ProtoUpl" +
+      "oadMeasurepointProtob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1948,12 +2770,12 @@ public final class ProtoUploadMeasurepointProto {
     internal_static_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Params_descriptor,
-        new java.lang.String[] { "Timestamp", "Measurepoints", });
-    internal_static_Params_MeasurepointsEntry_descriptor =
-      internal_static_Params_descriptor.getNestedTypes().get(0);
-    internal_static_Params_MeasurepointsEntry_fieldAccessorTable = new
+        new java.lang.String[] { "Timestamp", "Measurepoint", });
+    internal_static_Measurepoint_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_Measurepoint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Params_MeasurepointsEntry_descriptor,
+        internal_static_Measurepoint_descriptor,
         new java.lang.String[] { "Key", "Value", });
     com.google.protobuf.AnyProto.getDescriptor();
   }

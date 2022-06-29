@@ -25,6 +25,7 @@ public class CborUploadMeasurepoint {
     private Params params;
 
     @Data
+    @NoArgsConstructor
     @AllArgsConstructor
     public static class Params {
         private Map<String, Object> measurepoints;

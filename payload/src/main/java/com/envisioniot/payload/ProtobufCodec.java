@@ -1,6 +1,5 @@
 package com.envisioniot.payload;
 
-import com.envisioniot.payload.ICodec;
 import com.envisioniot.payload.proto.ProtoUploadMeasurepointProto;
 import lombok.SneakyThrows;
 
@@ -10,7 +9,7 @@ import lombok.SneakyThrows;
  * @author zhonghua.wu
  * @date 2022-06-29 00:26:23
  */
-public class ProtoCodec implements ICodec<ProtoUploadMeasurepointProto.UploadMeasurepoint> {
+public class ProtobufCodec implements ICodec<ProtoUploadMeasurepointProto.UploadMeasurepoint> {
     @Override
     public byte[] encode(ProtoUploadMeasurepointProto.UploadMeasurepoint uploadMeasurepoint) {
         return uploadMeasurepoint.toByteArray();

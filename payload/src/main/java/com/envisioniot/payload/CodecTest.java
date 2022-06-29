@@ -6,6 +6,8 @@ import com.envisioniot.payload.proto.ProtoUploadMeasurepoint;
 import com.envisioniot.payload.proto.ProtoUploadMeasurepointFixed;
 import org.apache.commons.codec.binary.Hex;
 
+import java.util.List;
+
 /**
  * Desc:
  *
@@ -24,6 +26,7 @@ public class CodecTest {
         JsonCodec jsonCodec = new JsonCodec();
         byte[] jsonBytes = jsonCodec.encode(jsonUploadMeasurepoint);
         printHex("json", jsonBytes);
+        System.out.println("json str: \n" + new String(jsonBytes));
     }
 
     public static void testCbor() {
@@ -49,8 +52,10 @@ public class CodecTest {
         byte[] protobufFixBytes = protobufFixedCodec.encode(protobufFixedUploadMeasurepoint);
         printHex("protobufFix", protobufFixBytes);
 
-        ProtoUploadMeasurepointFixed.UploadMeasurepoint newOne = protobufFixedCodec.decode(protobufFixBytes);
-        System.out.println("new protobuf fixed: " + newOne);
+        ProtoUploadMeasurepointFixed.UploadMeasurepoint decoded = protobufFixedCodec.decode(protobufFixBytes);
+        System.out.println("new protobuf fixed: \n" + decoded);
+        List<Double> mpArrayDouble = decoded.getParams().getMeasurepoint().getMpArrayDoubleList();
+        System.out.println("mp_array_double list: " + mpArrayDouble);
     }
 
 

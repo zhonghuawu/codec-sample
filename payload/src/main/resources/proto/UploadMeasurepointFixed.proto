@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+option java_package = "com.envisioniot.payload.proto";
+option java_outer_classname = "ProtoUploadMeasurepointFixed";
+
+message UploadMeasurepoint {
+  string id = 1;
+  string version = 2;
+  string method = 3;
+  Params params = 4;
+}
+
+message Params {
+  int64 timestamp = 1;
+  Measurepoint measurepoint = 2;
+}
+
+message Measurepoint {
+  int32 mp_int = 1;
+  int64 mp_long = 2;
+  float mp_float = 3;
+  double mp_double = 4;
+  enum MpEnum{
+    a = 0;
+    b = 1;
+  };
+  MpEnum mp_enum = 5;
+  string mp_string = 6;
+  uint64 mp_timestamp = 7;
+  string mp_date = 8;
+  repeated int32 mp_array_int = 9;
+  repeated float mp_array_float = 10;
+  repeated double mp_array_double = 11;
+  repeated string mp_array_string = 12;
+  message MpStruct {
+    double mp_struct_int = 1;
+    string mp_struct_string = 2;
+  }
+  MpStruct mp_struct = 13;
+}

@@ -1,6 +1,6 @@
 package com.envisioniot.server.netty;
 
-import com.envisioniot.payload.proto.ProtoUploadMeasurepointProto;
+import com.envisioniot.payload.proto.ProtoUploadMeasurepoint;
 import com.envisioniot.transport.ServerManager;
 import com.envisioniot.transport.pipeline.ProtoBufRWPipelineInitializer;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +24,7 @@ public class NettyServer {
 
     public NettyServer() {
         serverManager = new ServerManager(JSON_PORT, new ProtoBufRWPipelineInitializer<>(
-                ProtoUploadMeasurepointProto.UploadMeasurepoint.getDefaultInstance(),
+                ProtoUploadMeasurepoint.UploadMeasurepoint.getDefaultInstance(),
                 MessageHandler::new));
     }
 

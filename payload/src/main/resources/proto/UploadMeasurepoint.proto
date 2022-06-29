@@ -3,7 +3,7 @@ syntax = "proto3";
 import "google/protobuf/any.proto";
 
 option java_package = "com.envisioniot.payload.proto";
-option java_outer_classname = "ProtoUploadMeasurepointProto";
+option java_outer_classname = "ProtoUploadMeasurepoint";
 
 message UploadMeasurepoint {
   string id = 1;

@@ -2,7 +2,8 @@ package com.envisioniot.payload;
 
 import com.envisioniot.payload.cbor.CborUploadMeasurepoint;
 import com.envisioniot.payload.json.JsonUploadMeasurepoint;
-import com.envisioniot.payload.proto.ProtoUploadMeasurepointProto;
+import com.envisioniot.payload.proto.ProtoUploadMeasurepoint;
+import com.envisioniot.payload.proto.ProtoUploadMeasurepointFixed;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.protobuf.*;
@@ -53,63 +54,63 @@ public class PayloadGenerator {
         return cborUploadMeasurepoint;
     }
 
-    public static ProtoUploadMeasurepointProto.UploadMeasurepoint protobuf() {
-        return ProtoUploadMeasurepointProto.UploadMeasurepoint.newBuilder()
+    public static ProtoUploadMeasurepoint.UploadMeasurepoint protobuf() {
+        return ProtoUploadMeasurepoint.UploadMeasurepoint.newBuilder()
                 .setId(id)
                 .setVersion(version)
                 .setMethod(method)
-                .setParams(ProtoUploadMeasurepointProto.Params.newBuilder()
+                .setParams(ProtoUploadMeasurepoint.Params.newBuilder()
                         .setTimestamp(timestamp)
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_int").setValue(Any.pack(Int32Value.of(mp_int)))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_long").setValue(Any.pack(Int64Value.of(mp_long)))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_float").setValue(Any.pack(FloatValue.of(mp_float)))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_double").setValue(Any.pack(DoubleValue.of(mp_double)))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_enum").setValue(Any.pack(StringValue.of(mp_string)))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_timestamp").setValue(Any.pack(UInt64Value.of(mp_timestamp)))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_date").setValue(Any.pack(StringValue.of(mp_date)))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_array_int").setValue(Any.pack(ListValue.newBuilder()
                                         .addAllValues(mp_array_int.stream()
                                                 .map(num -> Value.newBuilder().setNumberValue(num).build())
                                                 .collect(Collectors.toList()))
                                         .build()))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_array_float").setValue(Any.pack(ListValue.newBuilder()
                                         .addAllValues(mp_array_float.stream()
                                                 .map(num -> Value.newBuilder().setNumberValue(num).build())
                                                 .collect(Collectors.toList()))
                                         .build()))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_array_double").setValue(Any.pack(ListValue.newBuilder()
                                         .addAllValues(mp_array_double.stream()
                                                 .map(num -> Value.newBuilder().setNumberValue(num).build())
                                                 .collect(Collectors.toList()))
                                         .build()))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_array_string").setValue(Any.pack(ListValue.newBuilder()
                                         .addAllValues(mp_array_string.stream()
                                                 .map(s -> Value.newBuilder().setStringValue(s).build())
                                                 .collect(Collectors.toList()))
                                         .build()))
                                 .build())
-                        .addMeasurepoint(ProtoUploadMeasurepointProto.Measurepoint.newBuilder()
+                        .addMeasurepoint(ProtoUploadMeasurepoint.Measurepoint.newBuilder()
                                 .setKey("mp_struct").setValue(Any.pack(Struct.newBuilder()
                                         .putAllFields(mp_struct.entrySet().stream()
                                                 .map(entry -> {
@@ -125,6 +126,36 @@ public class PayloadGenerator {
                                                 }).collect(Collectors.toMap(Pair::getFirst, Pair::getSecond)))
                                         .build()))
                                 .build())
+                )
+                .build();
+    }
+
+
+    public static ProtoUploadMeasurepointFixed.UploadMeasurepoint protobufFixed() {
+        return ProtoUploadMeasurepointFixed.UploadMeasurepoint.newBuilder()
+                .setId(id)
+                .setVersion(version)
+                .setMethod(method)
+                .setParams(ProtoUploadMeasurepointFixed.Params.newBuilder()
+                        .setTimestamp(timestamp)
+                        .setMeasurepoint(ProtoUploadMeasurepointFixed.Measurepoint.newBuilder()
+                                .setMpInt(mp_int)
+                                .setMpLong(mp_long)
+                                .setMpFloat(mp_float)
+                                .setMpDouble(mp_double)
+                                .setMpEnumValue(0)
+                                .setMpString(mp_string)
+                                .setMpTimestamp(mp_timestamp)
+                                .setMpDate(mp_date)
+                                .addAllMpArrayInt(mp_array_int)
+                                .addAllMpArrayFloat(mp_array_float)
+                                .addAllMpArrayDouble(mp_array_double)
+                                .addAllMpArrayString(mp_array_string)
+                                .setMpStruct(ProtoUploadMeasurepointFixed.Measurepoint.MpStruct.newBuilder()
+                                        .setMpStructInt(mp_struct_int)
+                                        .setMpStructString(mp_struct_string)
+                                        .build())
+                        )
                 )
                 .build();
     }
@@ -162,11 +193,12 @@ public class PayloadGenerator {
     public static final List<String> mp_array_string = Lists.newArrayList("aa", "bb", "cc", "dd");
 
     public static final Map<String, Object> mp_struct = Maps.newHashMap();
+    public static final int mp_struct_int = 1;
+    public static final String mp_struct_string = "inner_abcd";
 
     static {
-        mp_struct.put("mp_struct_int", 1.0);
-        mp_struct.put("mp_struct_string", "inner_abcd");
+        mp_struct.put("mp_struct_int", mp_struct_int);
+        mp_struct.put("mp_struct_string", mp_struct_string);
     }
-
 
 }

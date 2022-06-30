@@ -24,9 +24,9 @@ public class JsonDecoderMessageHandler extends SimpleChannelInboundHandler<ByteB
         int readableBytes = byteBuf.readableBytes();
         byte[] bytes = new byte[readableBytes];
         byteBuf.readBytes(bytes);
-        log.info("receive json uploadMeasurepoint[{}]", new String(bytes));
+        log.info("receive jsonUploadMeasurepoint string[{}]", new String(bytes));
         JsonUploadMeasurepoint jsonUploadMeasurepoint = jsonCodec.decode(bytes);
-        log.info("receive json UploadMeasurepoint[{}]", jsonUploadMeasurepoint);
+        log.info("receive jsonUploadMeasurepoint[{}]", jsonUploadMeasurepoint);
     }
 
 }

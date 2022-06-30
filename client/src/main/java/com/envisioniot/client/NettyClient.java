@@ -48,7 +48,7 @@ public class NettyClient {
                 pipeline.addLast(new JsonEncoderMessageHandler());
             }
         });
-        JsonUploadMeasurepoint jsonUploadMeasurepoint = new JsonUploadMeasurepoint();
+        JsonUploadMeasurepoint jsonUploadMeasurepoint = PayloadGenerator.json();
         clientManager.sendMessage(new Endpoint(HOST, JSON_PORT), jsonUploadMeasurepoint).await();
         clientManager.shutdown();
     }

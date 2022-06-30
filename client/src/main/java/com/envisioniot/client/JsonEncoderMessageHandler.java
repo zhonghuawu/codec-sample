@@ -2,10 +2,11 @@ package com.envisioniot.client;
 
 import com.envisioniot.payload.JsonCodec;
 import com.envisioniot.payload.json.JsonUploadMeasurepoint;
-import io.netty.channel.Channel;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelOutboundHandlerAdapter;
-import io.netty.channel.ChannelPromise;
+import io.netty.handler.codec.MessageToMessageEncoder;
+
+import java.util.List;
 
 /**
  * Desc:
@@ -13,15 +14,11 @@ import io.netty.channel.ChannelPromise;
  * @author zhonghua.wu
  * @date 2022-06-30 15:07:08
  */
-public class JsonEncoderMessageHandler extends ChannelOutboundHandlerAdapter {
+public class JsonEncoderMessageHandler extends MessageToMessageEncoder<JsonUploadMeasurepoint> {
     private final JsonCodec jsonCodec = new JsonCodec();
 
     @Override
-    public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
-        Channel channel = ctx.channel();
-        JsonUploadMeasurepoint jsonUploadMeasurepoint = (JsonUploadMeasurepoint) msg;
-        byte[] bytes = jsonCodec.encode(jsonUploadMeasurepoint);
-        ctx.write(msg, promise);
+    protected void encode(ChannelHandlerContext ctx, JsonUploadMeasurepoint msg, List<Object> out) throws Exception {
+        out.add(Unpooled.wrappedBuffer(jsonCodec.encode(msg)));
     }
-
 }

@@ -1,6 +1,6 @@
 package com.envisioniot.server.netty;
 
-import com.envisioniot.payload.JsonCodec;
+import com.envisioniot.payload.json.JsonCodec;
 import com.envisioniot.payload.json.JsonUploadMeasurepoint;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

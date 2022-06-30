@@ -1,6 +1,6 @@
 package com.envisioniot.server.netty;
 
-import com.envisioniot.payload.CborCodec;
+import com.envisioniot.payload.cbor.CborCodec;
 import com.envisioniot.payload.cbor.CborUploadMeasurepoint;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

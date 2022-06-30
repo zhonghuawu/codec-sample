@@ -1,9 +1,13 @@
 package com.envisioniot.payload;
 
+import com.envisioniot.payload.cbor.CborCodec;
 import com.envisioniot.payload.cbor.CborUploadMeasurepoint;
+import com.envisioniot.payload.json.JsonCodec;
 import com.envisioniot.payload.json.JsonUploadMeasurepoint;
 import com.envisioniot.payload.proto.ProtoUploadMeasurepoint;
 import com.envisioniot.payload.proto.ProtoUploadMeasurepointFixed;
+import com.envisioniot.payload.proto.ProtobufCodec;
+import com.envisioniot.payload.proto.ProtobufFixedCodec;
 import org.apache.commons.codec.binary.Hex;
 
 import java.util.List;
@@ -16,9 +20,9 @@ import java.util.List;
  */
 public class CodecTest {
     public static void main(String[] args) {
-        testJson();
+        //testJson();
         testCbor();
-        testProtobufFix();
+        //testProtobufFix();
     }
 
     public static void testJson() {
@@ -34,6 +38,9 @@ public class CodecTest {
         CborCodec cborCodec = new CborCodec();
         byte[] cborBytes = cborCodec.encode(cborUploadMeasurepoint);
         printHex("cbor", cborBytes);
+
+        CborUploadMeasurepoint decoded = cborCodec.decode(cborBytes);
+        System.out.println(decoded);
     }
 
     public static void testProtobuf() {

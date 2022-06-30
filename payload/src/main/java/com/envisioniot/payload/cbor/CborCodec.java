@@ -1,13 +1,14 @@
-package com.envisioniot.payload;
+package com.envisioniot.payload.cbor;
 
-import com.envisioniot.payload.cbor.CborUploadMeasurepoint;
+import com.envisioniot.payload.ICodec;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.JsonNodeType;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.dataformat.cbor.databind.CBORMapper;
 import lombok.SneakyThrows;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Desc:
@@ -85,6 +86,57 @@ public class CborCodec implements ICodec<CborUploadMeasurepoint> {
     @SneakyThrows
     @Override
     public CborUploadMeasurepoint decode(byte[] bytes) {
-        return mapper.readValue(bytes, CborUploadMeasurepoint.class);
+        CborUploadMeasurepoint cborUploadMeasurepoint = new CborUploadMeasurepoint();
+        JsonNode root = mapper.readTree(bytes);
+        // todo: check root is array
+        ArrayNode rootArrayNode = (ArrayNode) root;
+        // todo: check root length is 4
+        cborUploadMeasurepoint.setId(rootArrayNode.get(0).asText());
+        cborUploadMeasurepoint.setVersion(rootArrayNode.get(1).asText());
+        cborUploadMeasurepoint.setMethod(root.get(2).asText());
+        ArrayNode paramsArrayNode = (ArrayNode) rootArrayNode.get(3);
+        CborUploadMeasurepoint.Params params = new CborUploadMeasurepoint.Params();
+        // todo: check params is array, length = 2
+        params.setTimestamp(paramsArrayNode.get(0).asLong());
+        ObjectNode paramsMapNode = (ObjectNode) paramsArrayNode.get(1);
+        // todo: check params node is array
+        Map<String, Object> measurepoint = new HashMap<>();
+        for (Iterator<Map.Entry<String, JsonNode>> it = paramsMapNode.fields(); it.hasNext(); ) {
+            Map.Entry<String, JsonNode> entry = it.next();
+            String key = entry.getKey();
+            JsonNode valueNode = entry.getValue();
+            Object value = null;
+            switch (valueNode.getNodeType()) {
+                case ARRAY:
+                    ArrayNode valueArrayNode = (ArrayNode) valueNode;
+                    if (valueArrayNode.get(0).getNodeType() == JsonNodeType.STRING) {
+                        List<String> list = new ArrayList<>();
+                        valueArrayNode.forEach(n -> list.add(n.asText()));
+                        value = list;
+                    } else if (valueArrayNode.get(0).getNodeType() == JsonNodeType.NUMBER) {
+                        List<Double> list = new ArrayList<>();
+                        valueArrayNode.forEach(n -> list.add(n.asDouble()));
+                        value = list;
+                    }
+                    break;
+                case BINARY:
+                case BOOLEAN:
+                case MISSING:
+                case NULL:
+                case NUMBER:
+                    value = valueNode.asDouble();
+                    break;
+                case OBJECT:
+                case POJO:
+                case STRING:
+                    value = valueNode.asText();
+                    break;
+                default:
+            }
+            measurepoint.put(key, value);
+        }
+        params.setMeasurepoints(measurepoint);
+        cborUploadMeasurepoint.setParams(params);
+        return cborUploadMeasurepoint;
     }
 }

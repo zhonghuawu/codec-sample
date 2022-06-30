@@ -1,0 +1,26 @@
+{
+  "id": "1",
+  "version": "1.0",
+  "method": "thing.measurepoint.port",
+  "params": {
+    "measurepoints": {
+      "mp_array_double": [11.11, 22.22, 33.33, 44.44],
+      "mp_string": "string_1",
+      "mp_timestamp": 1656483375120,
+      "mp_array_string": ["aa", "bb", "cc", "dd"],
+      "mp_double": 1.11,
+      "mp_int": 1,
+      "mp_date": "2022-07-01",
+      "mp_array_int": [1, 2, 3, 4],
+      "mp_float": 1.1,
+      "mp_long": 11,
+      "mp_enum": "enum_1",
+      "mp_array_float": [1.1, 2.2, 3.3, 4.4],
+      "mp_struct": {
+        "mp_struct_string": "inner_abcd",
+        "mp_struct_int": 1
+      }
+    },
+    "timestamp": 1656482270873
+  }
+}

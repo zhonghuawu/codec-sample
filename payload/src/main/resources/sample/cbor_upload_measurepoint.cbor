@@ -1,0 +1,84 @@
+["1", "1.0", "thing.measurepoint.port", [1656518913390, {"mp_array_double": [11.11, 22.22, 33.33, 44.44], "mp_string": "string_1", "mp_timestamp": 1656483375120, "mp_array_string": ["aa", "bb", "cc", "dd"], "mp_double": 1.11, "mp_int": 1, "mp_date": "2022-07-01", "mp_array_int": [1, 2, 3, 4], "mp_float": 1.100000023841858, "mp_long": 11, "mp_enum": "enum_1", "mp_array_float": [1.100000023841858, 2.200000047683716, 3.299999952316284, 4.400000095367432], "mp_struct": {"mp_struct_string": "inner_abcd", "mp_struct_int": 1}}]]
+
+
+84                                      # array(4)
+   61                                   # text(1)
+      31                                # "1"
+   63                                   # text(3)
+      312E30                            # "1.0"
+   77                                   # text(23)
+      7468696E672E6D656173757265706F696E742E706F7274 # "thing.measurepoint.port"
+   82                                   # array(2)
+      1B 00000181B038AD6E               # unsigned(1656518913390)
+      BF                                # map(*)
+         6F                             # text(15)
+            6D705F61727261795F646F75626C65 # "mp_array_double"
+         84                             # array(4)
+            FB 40263851EB851EB8         # primitive(4622443992037269176)
+            FB 40363851EB851EB8         # primitive(4626947591664639672)
+            FB 4040AA3D70A3D70A         # primitive(4629887597796382474)
+            FB 40463851EB851EB8         # primitive(4631451191292010168)
+         69                             # text(9)
+            6D705F737472696E67          # "mp_string"
+         68                             # text(8)
+            737472696E675F31            # "string_1"
+         6C                             # text(12)
+            6D705F74696D657374616D70    # "mp_timestamp"
+         1B 00000181AE1A6810            # unsigned(1656483375120)
+         6F                             # text(15)
+            6D705F61727261795F737472696E67 # "mp_array_string"
+         84                             # array(4)
+            62                          # text(2)
+               6161                     # "aa"
+            62                          # text(2)
+               6262                     # "bb"
+            62                          # text(2)
+               6363                     # "cc"
+            62                          # text(2)
+               6464                     # "dd"
+         69                             # text(9)
+            6D705F646F75626C65          # "mp_double"
+         FB 3FF1C28F5C28F5C3            # primitive(4607677814759028163)
+         66                             # text(6)
+            6D705F696E74                # "mp_int"
+         01                             # unsigned(1)
+         67                             # text(7)
+            6D705F64617465              # "mp_date"
+         6A                             # text(10)
+            323032322D30372D3031        # "2022-07-01"
+         6C                             # text(12)
+            6D705F61727261795F696E74    # "mp_array_int"
+         84                             # array(4)
+            01                          # unsigned(1)
+            02                          # unsigned(2)
+            03                          # unsigned(3)
+            04                          # unsigned(4)
+         68                             # text(8)
+            6D705F666C6F6174            # "mp_float"
+         FA 3F8CCCCD                    # primitive(1066192077)
+         67                             # text(7)
+            6D705F6C6F6E67              # "mp_long"
+         0B                             # unsigned(11)
+         67                             # text(7)
+            6D705F656E756D              # "mp_enum"
+         66                             # text(6)
+            656E756D5F31                # "enum_1"
+         6E                             # text(14)
+            6D705F61727261795F666C6F6174 # "mp_array_float"
+         84                             # array(4)
+            FA 3F8CCCCD                 # primitive(1066192077)
+            FA 400CCCCD                 # primitive(1074580685)
+            FA 40533333                 # primitive(1079194419)
+            FA 408CCCCD                 # primitive(1082969293)
+         69                             # text(9)
+            6D705F737472756374          # "mp_struct"
+         BF                             # map(*)
+            70                          # text(16)
+               6D705F7374727563745F737472696E67 # "mp_struct_string"
+            6A                          # text(10)
+               696E6E65725F61626364     # "inner_abcd"
+            6D                          # text(13)
+               6D705F7374727563745F696E74 # "mp_struct_int"
+            01                          # unsigned(1)
+            FF                          # primitive(*)
+         FF                             # primitive(*)

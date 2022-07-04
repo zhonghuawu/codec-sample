@@ -21,8 +21,8 @@ import java.util.List;
 public class CodecTest {
     public static void main(String[] args) {
         //testJson();
-        testCbor();
-        //testProtobufFix();
+        //testCbor();
+        testProtobufFix();
     }
 
     public static void testJson() {

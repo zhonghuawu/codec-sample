@@ -1,7 +1,6 @@
 package com.envisioniot.payload.proto;
 
 import com.envisioniot.payload.ICodec;
-import com.envisioniot.payload.proto.ProtoUploadMeasurepointFixed;
 import lombok.SneakyThrows;
 
 /**

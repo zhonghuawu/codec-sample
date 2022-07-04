@@ -1,7 +1,6 @@
 package com.envisioniot.payload.json;
 
 import com.envisioniot.payload.ICodec;
-import com.envisioniot.payload.json.JsonUploadMeasurepoint;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
 
